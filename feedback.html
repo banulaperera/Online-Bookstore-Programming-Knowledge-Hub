@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/feedbackStyle.css">
+    <link rel="icon" type="images/logo-icon" href="images/logo.png">
+
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="logo">
+        </a>
+    
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="buy-products.html">shop</a>
+            <a href="feedback.html" style="color:#E65828;border-bottom: .1rem solid #E65828;padding-bottom: .5rem;">Feedback</a>
+            <a href="quiz.html">quiz</a>
+            <a href="sitemap.html">site map</a>
+            <a href="student-details.html">about us</a>
+		    <a href="gallery.html">Gallery</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    
+    </header>
+
+
+    <section class="feedback" id="contact" >
+        <div class="row">
+            <form name="form-feedback" method="post" action="mailto:avishka.20212079@iit.ac.lk" enctype="text/plain" novalidate>
+                <h3>How did we do?</h3>
+
+                <div class="inputBox" >
+                        <span class="fas fa-user"></span>
+                        <input type="text" placeholder="Name" id="name" name="Name">
+                </div>
+                <div id="name-error-massege" class="error-massge-box"></div>
+                <div class="inputBox">
+                        <span class="fas fa-envelope"></span>
+                        <input type="email" placeholder="Email" id="email" name="Email">
+                </div>
+                <div id="email-error-massege" class="error-massge-box"></div>
+
+                <div class="label">
+                    <label>What is your profession?</label>
+                </div>
+
+                <div class="profession">
+                    <select  id="profession" class="dropdown" name="Profession">
+                        <option style="display:none">
+                        <option value="Student" >Student</option>
+                        <option value="Teacher">Teacher</option>
+                        <option value="Lecturer">Lecturer</option>
+                        <option value="Tutor">Tutor</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div id="profession-error-massege" class="error-massge-box"></div>
+                <div class="label">
+                    <label>How satisfied were you with our website today?</label>
+                </div>
+                <div class="reaction">
+                    <div class="radio-items">
+                        <input type="radio" name="reaction-face" value="excellent" class="reaction-radio" id="excellent"><img src="images/reactions/1.png" alt="" class="reaction-face">
+                    </div>
+                    <div class="radio-items">
+                        <input type="radio" name="reaction-face" value="good" id="good" class="reaction-radio"><img src="images/reactions/2.png" alt="" class="reaction-face">
+                    </div>
+                    <div class="radio-items">
+                        <input type="radio" name="reaction-face" value="neutral" id="neutral" class="reaction-radio"><img src="images/reactions/3.png" alt="" class="reaction-face">
+                    </div>
+                    <div class="radio-items">
+                        <input type="radio" name="reaction-face" value="poor" id="poor" class="reaction-radio"><img src="images/reactions/4.png" alt="" class="reaction-face">
+                    </div>
+                    <div class="radio-items">
+                        <input type="radio" name="reaction-face" value="verybad" id="verybad" class="reaction-radio"><img src="images/reactions/5.png" alt="" class="reaction-face">
+                    </div>
+                </div>
+
+                <div id="reaction-error-massege" class="error-massge-box"></div>
+
+                <div class="label">
+                    <label >how do we improve our service?</label>
+                </div>
+                <div class="inputBox">
+                    <textarea  id="comment-box" rows="6" class="txtarea" placeholder="Comment Here..." name="Comment"></textarea>
+                </div>
+                <div id="service-comment-error-massege" class="error-massge-box"></div>
+               
+                <div class="label">
+                    <label >would you mind to visit us again?</label>
+                </div>
+
+                <div class="reaction">
+                    <div class="radio-items">
+                        <input type="radio" name="visit" value="yes" class="visit-radio" id="visitUs-yes"> <span style="padding-left: 5px;">YES</span>
+                    </div>
+                    <div class="radio-items">
+                        <input type="radio" name="visit" value="no"  class="visit-radio" id="visitUs-no"><span style="padding-left: 5px;">NO</span>
+                    </div>
+                   
+                </div>
+                <div id="visit-error-massege" class="error-massge-box"></div>
+
+                <input type="submit" value="Submit" class="btn">
+            </form>
+        
+        </div>     
+    </section>
+    <section id="after-submit" style="display: none">
+        <h2>Thank You</h2>
+        <p>Thank you for taking the time to give us your feedback on your experience today.</p>
+    </section>
+
+    <section class="footer">
+
+        <div class="credit">
+            Developed by 
+            <span class="developer-info"> <a href="Page-Editors/page-editor-2.html">Avishka Pramuditha </a></span> | all rights reserved <br> <br>
+        </div>
+    </section>
+
+    <script src="js/feedback.js"></script>
+</body>
+</html>

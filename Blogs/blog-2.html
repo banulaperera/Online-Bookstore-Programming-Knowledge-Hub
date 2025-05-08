@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="images/logo-icon" href="../images/logo.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/Blogs/blogStyle.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        body {
+            background-color: var(--bg);
+        }
+
+        section {
+            padding: 2rem 20%;
+        }
+
+        ul{
+            margin-top: 10px;
+            font-size: 24px;
+            list-style-type:square;
+            margin-bottom: 10px;
+            margin-left: 25px;
+        }
+
+        li{
+            margin-top: 3px;
+            color: #02f648;
+        }
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="../images/logo.png" alt="">
+    </a>
+
+    <nav class="navbar">
+        <a href="../home.html">home</a>
+        <a href="../buy-products.html">shop</a>
+        <a href="../feedback.html">Feedback</a>
+        <a href="../quiz.html">quiz</a>
+        <a href="../sitemap.html">site map</a>
+        <a href="../student-details.html">about us</a>
+        <a href="../gallery.html">Gallery</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+</header>
+
+<section class="post-header">
+    <div class="header-content header-content">
+        <div class="nav-links"> 
+            <div><a class="navigators" href="../home.html" style="background-color: #E65828; color: aliceblue;">Back To Home</a></div>
+            <div><a class="navigators" href="#section1">What is OOP</a></div>
+            <div><a class="navigators" href="#section2">Objects</a></div>
+            <div><a class="navigators" href="#section3">Classes</a></div>
+            <div><a class="navigators" href="#section4">OOP-Concepts</a></div>
+            <div><a class="navigators" href="#section5">Conclusion</a></div>
+        </div>
+
+        <h1 class="post-title">Object Oriented Programming</h1>
+
+        <img src="../images/blogs/blog-2/oop_1.jpg" alt="" class="post-img">
+    </div>
+</section>
+
+<section class="post-content post-container">
+
+    <h2 class="subheading" id="section1">What is OOP</h2>
+
+    <p class="post-paragraph">
+        A programming paradigm known as object-oriented programming system (OOPs) is built on the idea of "objects" that
+        may hold data and operations. Increasing programs' flexibility and maintainability is the major goal of
+        object-oriented programming. It is simpler to comprehend how a program operates when data and its activity
+        (methods) are combined in a single area (object) thanks to object-oriented programming. To ensure that you have
+        no trouble grasping OOPs concepts,
+        we will go through every feature of OOPs in depth.
+    </p>
+
+    <div class="blog-image">
+        <img src="../images/blogs/blog-2/oop_2.png" alt="" class="blog-img">
+    </div>
+<br>
+    <h2 class="subheading" id="section2">What is an object</h2>
+    <p class="post-paragraph">
+        Object: is a bundle of data and its behavior(often known as methods).<br>
+        Objects have two characteristics: They have states and behaviors. <br>
+        <br>
+        Examples of states and behaviors<br><br>
+        Example 1: <br>
+        Object: House <br>
+        State: Address, Color, Area <br>
+        Behavior: Open door, close door<br>
+    </p>
+
+    <h2 class="subheading" id="section3">What is a class in OOPs Concepts</h2>
+
+    <p class="post-paragraph">
+        You may think of a class as a blueprint from which you can build as many different types of objects as you wish.
+        Here, for instance, is a class Website with two data members (also known as fields, instance variables and
+        object states). Although this is only a blueprint and does not represent any particular website, we can use it
+        to construct Website objects (or instances) that do. While building the two objects, we used constructors to
+        give each one of them unique characteristics.
+    </p>
+
+    <div class="images-container">
+        <img src="../images/blogs/blog-2/oop_3.png" alt="">
+    </div>
+
+    <h2 class="subheading" id="section4">OOP Concepts</h2>
+
+    <ul>
+        <li>Encapsulation</li>
+        <li>Inheritance</li>
+        <li>Polymorphism</li>
+        <li>Abstraction</li>
+    </ul>
+    </p>
+
+    <h2 class="subheading" id="section4">what is constructor</h2>
+
+    <p class="post-paragraph">
+        Constructor looks like a method but it is in fact not a method. It’s name is same as class name and it does not
+        return any value
+    </p>
+
+    <h2 class="subheading">Encapsulation</h2>
+
+    <p class="post-paragraph">
+        Encapsulation is the simple act of unifying an object's state (fields) and behavior (methods). Encapsulation is
+        done when you create a class.
+    </p>
+
+    <h2 class="subheading">Inheritance</h2>
+
+    <p class="post-paragraph">
+        Inheritance is the process through which a class gains the traits and capabilities of another class. Each subclass defines just those characteristics that are exclusive to it; the remaining features may be inherited from the parent class, which promotes the notion of code reuse.
+    </p>
+
+    <h2 class="subheading">Polymorphism</h2>
+
+    <p class="post-paragraph">
+        A characteristic of object-oriented programming called polymorphism enables us to carry out a single operation in several ways. For instance, if the class Animal had a method called animalSound(), we are unable to implement it since we are unsure of which Animal classes will extend the Animal class.
+    </p>
+
+    <h2 class="subheading">Abstraction</h2>
+
+    <p class="post-paragraph">
+        Using abstraction, you "hide" unneeded information from the user and only display "relevant" information. For instance, when you connect into your bank account online, what occurs after you push the login button, how the input data is delivered to the server, and how it is confirmed, are all abstracted from you.
+    </p>
+
+    <h2 class="subheading">What is an interface</h2>
+
+    <p class="post-paragraph">
+        An interface is a blueprint for a class that may be specified using the interface keyword. Interfaces can only include constants and abstract methods (methods with only signatures no body). Interfaces, like abstract classes, cannot be instantiated; they can only be implemented by classes or extended by additional interfaces. In Java, an interface is a typical approach to accomplish complete abstraction.
+    </p>
+    <br><br>
+    <h2 class="subheading" id="section5">Conclusion</h2>
+
+    <p class="post-paragraph">
+        The ideas of objects and classes are central to object-oriented programming. In Java, classes are referred to as templates for objects, and objects are instances of a class, thus the objects can inherit all of the class's traits, variables, and functions.
+    </p>
+
+
+</section>
+
+<section class="footer">
+
+    <div class="credit">
+        Developed by
+        <span class="developer-info"> <a href="../Page-Editors/page-editor-2.html" target="">Avishka Pramuditha</a></span> | all rights reserved <br> <br>
+    </div>
+</section>
+
+</body>
+</html> 

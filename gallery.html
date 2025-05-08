@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="images/logo-icon" href="images/logo.png">
+	<title>Gallery</title>
+
+	<style>
+        .banner {
+            background-image: url('images/banner.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 350px;
+            position: relative;
+        }
+    </style>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/gallery.css">
+
+  <script src="js/gallery.js"></script>
+</head>
+<body>
+
+  <header class="header">
+
+		<a href="#" class="logo">
+			<img src="images/logo.png" alt="">
+		</a>
+	
+		<nav class="navbar">
+			<a href="home.html">home</a>
+			<a href="buy-products.html">shop</a>
+			<a href="feedback.html">Feedback</a>
+			<a href="quiz.html">quiz</a>
+			<a href="sitemap.html">site map</a>
+			<a href="student-details.html">about us</a>
+			<a href="gallery.html" style="color:#E65828;border-bottom: .1rem solid #E65828;padding-bottom: .5rem;">Gallery</a>
+		</nav>
+	
+		<div class="icons">
+			<div class="fas fa-bars" id="menu-btn"></div>
+		</div>
+
+	</header>
+
+  <main>
+    <div class="banner">
+      <h1 class="banner-heading">GALLERY</h1>
+      <h2>Customization Options</h2>
+      <p>Adjust font size:</p>
+
+      <div class="font-size">
+        <button class="button-small" onclick="setFontSize('16px')">Small</button>
+        <button class="button-medium" onclick="setFontSize('20px')">Medium</button>
+        <button class="button-large" onclick="setFontSize('24px')">Large</button>
+      </div>
+    
+      <p>Change color scheme:</p>
+    
+      <div class="color-scheme">
+        <button class="button-light" onclick="changeColor('light')">Light</button>
+        <button class="button-dark" onclick="changeColor('dark')">Dark</button>
+        <button class="button-contrast" onclick="changeColor('contrast')">Contrast</button>
+        <button class="button-random" onclick="changeColor('random')">Random</button>
+      </div>
+    </div>
+
+    <br>
+    <div class="container" id="container">
+      <img id="image-expanded" alt="" src="https://placehold.it/350x150/transparent">
+      <div id="text-block"></div>
+    </div>
+    
+    <div class="gallery-row">
+      <div class="gallery-column">
+        <img src="images/gallery/image-1.jpg" 
+        alt="Experience a refreshing approach to learning Java with 'Head First Java' by Kathy Sierra. This captivating book engages readers through its visually-rich format, dynamic examples, and witty humor. With its intuitive approach, 'Head First Java' makes learning programming fun and accessible for beginners and experts alike." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">Experience a refreshing approach to learning Java with 'Head First Java' by Kathy Sierra. This captivating book engages readers through its visually-rich format, dynamic examples, and witty humor. With its intuitive approach, 'Head First Java' makes learning programming fun and accessible for beginners and experts alike.</div>
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-2.jpg" 
+        alt="Blockchain technology has revolutionized industries from finance to healthcare. With its transparent and decentralized nature, blockchain has the potential to transform the way we live and work." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">Blockchain technology has revolutionized industries from finance to healthcare. With its transparent and decentralized nature, blockchain has the potential to transform the way we live and work.</div>
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-3.png"
+        alt="GeeksforGeeks is a comprehensive online learning platform for computer science enthusiasts. With a vast array of tutorials, coding challenges, and interview preparation materials, GeeksforGeeks is the go-to destination for anyone looking to enhance their programming skills." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">GeeksforGeeks is a comprehensive online learning platform for computer science enthusiasts. With a vast array of tutorials, coding challenges, and interview preparation materials, GeeksforGeeks is the go-to destination for anyone looking to enhance their programming skills.</div>
+      </div>
+    </div>
+    <div class="gallery-row">
+      <div class="gallery-column">
+        <img src="images/gallery/image-4.jpg"
+        alt="The image features a group of enthusiastic individuals competing in a hackathon. With its fast-paced and collaborative environment, hackathons are the perfect place to test and showcase coding skills." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">The image features a group of enthusiastic individuals competing in a hackathon. With its fast-paced and collaborative environment, hackathons are the perfect place to test and showcase coding skills.</div>
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-5.jpg" 
+        alt="The image depicts the Java code that prints 'Hello, World' to the console. While this program may seem simple, it represents a powerful milestone in the journey of every programmer. The code serves as an essential building block for Java beginners, providing a foundation for further exploration of the language." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">The image depicts the Java code that prints 'Hello, World' to the console. While this program may seem simple, it represents a powerful milestone in the journey of every programmer. The code serves as an essential building block for Java beginners, providing a foundation for further exploration of the language.</div>
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-6.png"
+        alt="The image depicts a graph ranking the most popular programming languages, with Java taking the top spot, followed by Python, JavaScript, and C/C++. This graph showcases the widespread adoption and growing importance of these languages in today's tech-driven world." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">The image depicts a graph ranking the most popular programming languages, with Java taking the top spot, followed by Python, JavaScript, and C/C++. This graph showcases the widespread adoption and growing importance of these languages in today's tech-driven world.</div>
+      </div>
+    </div>
+    <div class="gallery-row">
+      <div class="gallery-column">
+        <img src="images/gallery/image-7.jpg"
+        alt="Embark on a thrilling journey into the world of Python programming with 'Python Crash Course' by Eric Matthes. Whether you're a beginner or an experienced programmer, 'Python Crash Course' offers an immersive learning experience that takes you from the basics to advanced concepts." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">Embark on a thrilling journey into the world of Python programming with 'Python Crash Course' by Eric Matthes. Whether you're a beginner or an experienced programmer, 'Python Crash Course' offers an immersive learning experience that takes you from the basics to advanced concepts.</div>
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-8.jpg" 
+        alt="The image showcases the concept of the metaverse, a virtual universe where users can interact with each other and digital objects in a realistic and immersive environment. With its potential to revolutionize entertainment, education, and commerce, the metaverse has become a hot topic in the tech world." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">The image showcases the concept of the metaverse, a virtual universe where users can interact with each other and digital objects in a realistic and immersive environment. With its potential to revolutionize entertainment, education, and commerce, the metaverse has become a hot topic in the tech world.</div>
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-9.jpg"
+        alt="Discover the fundamentals of web development with 'HTML and CSS' by Jon Duckett. 'HTML and CSS' is a comprehensive guide that teaches readers how to design and develop beautiful and functional websites." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">Discover the fundamentals of web development with 'HTML and CSS' by Jon Duckett. 'HTML and CSS' is a comprehensive guide that teaches readers how to design and develop beautiful and functional websites.</div>
+      </div>
+    </div>
+    <div class="gallery-row">
+      <div class="gallery-column">
+        <img src="images/gallery/image-10.jpg"
+        alt="The image depicts the cycle of continuous development, integration, testing, and deployment of software, highlighting the importance of collaboration and automation in the DevOps process. With its emphasis on speed, quality, and agility, DevOps has become an integral part of modern software development." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">The image depicts the cycle of continuous development, integration, testing, and deployment of software, highlighting the importance of collaboration and automation in the DevOps process. With its emphasis on speed, quality, and agility, DevOps has become an integral part of modern software development.</div>
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-11.png" 
+        alt="Learn to code with ease using Codecademy, the online learning platform for coding. Whether you're a beginner or an experienced programmer, Codecademy offers a comprehensive and engaging learning experience that covers a wide range of programming languages and topics." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">Learn to code with ease using Codecademy, the online learning platform for coding. Whether you're a beginner or an experienced programmer, Codecademy offers a comprehensive and engaging learning experience that covers a wide range of programming languages and topics.</div>
+
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-12.jpg"
+        alt="Discover the art of writing clean and maintainable code with 'Clean Code' by Robert C. Martin. 'Clean Code' is a must-read for programmers who want to take their coding skills to the next level." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">Discover the art of writing clean and maintainable code with 'Clean Code' by Robert C. Martin. 'Clean Code' is a must-read for programmers who want to take their coding skills to the next level.</div>
+
+      </div>
+    </div>
+    <div class="gallery-row">
+      <div class="gallery-column">
+        <img src="images/gallery/image-13.jpg"
+        alt="Master the ins and outs of JavaScript with 'JavaScript: The Definitive Guide' by David Flanagan. 'JavaScript: The Definitive Guide' is a must-have resource for developers who want to learn the intricacies of the popular programming language." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">Master the ins and outs of JavaScript with 'JavaScript: The Definitive Guide' by David Flanagan. 'JavaScript: The Definitive Guide' is a must-have resource for developers who want to learn the intricacies of the popular programming language.</div>
+
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-14.png" 
+        alt="The image showcases the versatile and user-friendly editor- Visual Studio Code, highlighting its extensive range of features and extensions. Visual Studio Code is a popular choice for developers across various programming languages and platforms, making it a must-have tool for any coding project." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">The image showcases the versatile and user-friendly editor- Visual Studio Code, highlighting its extensive range of features and extensions. Visual Studio Code is a popular choice for developers across various programming languages and platforms, making it a must-have tool for any coding project.</div>
+
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-15.png"
+        alt="The image showcases the versatile and intuitive interface of the IntelliJ IDE, highlighting its extensive range of features and integrations. IntelliJ IDEA is a popular choice among Java developers, offering advanced code analysis, refactoring, and debugging tools." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">The image showcases the versatile and intuitive interface of the IntelliJ IDE, highlighting its extensive range of features and integrations. IntelliJ IDEA is a popular choice among Java developers, offering advanced code analysis, refactoring, and debugging tools.</div>
+
+      </div>
+    </div>
+    <div class="gallery-row">
+      <div class="gallery-column">
+        <img src="images/gallery/image-16.jpg"
+        alt="The image showcases the interconnected devices and sensors that make up the IoT ecosystem, highlighting the endless possibilities and benefits of this technology. From smart homes and cities to industrial automation and healthcare, IoT has revolutionized the way we interact with technology." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">The image showcases the interconnected devices and sensors that make up the IoT ecosystem, highlighting the endless possibilities and benefits of this technology. From smart homes and cities to industrial automation and healthcare, IoT has revolutionized the way we interact with technology.</div>
+
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-17.png" 
+        alt="Enhance your coding skills with W3Schools, a comprehensive and user-friendly online resource for web developers. W3Schools is a popular choice among developers of all levels, offering valuable insights and guidance on web development technologies." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">Enhance your coding skills with W3Schools, a comprehensive and user-friendly online resource for web developers. W3Schools is a popular choice among developers of all levels, offering valuable insights and guidance on web development technologies.</div>
+
+      </div>
+      <div class="gallery-column">
+        <img src="images/gallery/image-18.jpg"
+        alt="Green technology is the use of innovative and sustainable practices to create a cleaner and more efficient world. This image reflects the concept of green technology that encompasses a range of practices and technologies that aim to reduce our carbon footprint and create a more sustainable future." 
+        onclick="displayImage(this);">
+        <div class="gallery-item-description">Green technology is the use of innovative and sustainable practices to create a cleaner and more efficient world. This image reflects the concept of green technology that encompasses a range of practices and technologies that aim to reduce our carbon footprint and create a more sustainable future.</div>
+      </div>
+    </div>
+  </main>
+
+<section class="footer" aria-label="Footer section" style="margin-top: 70px;">    
+  <div class="credit">
+      Developed by 
+      <span class="developer-info"> <a href="Page-Editors/page-editor-4.html">Paveisha Shanthapriya </a></span> | all rights reserved <br> <br>
+  </div>
+</section>
+
+</body>
+</html>

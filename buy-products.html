@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+
+    <link rel="icon" type="images/logo-icon" href="images/logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shopStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="js/activePage.js"></script>
+
+</head>
+<body>
+
+    <div id="loader">
+
+    </div>
+	
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+    
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="buy-products.html"  style="color:#E65828;border-bottom: .1rem solid #E65828;padding-bottom: .5rem;">shop</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="quiz.html">quiz</a>
+            <a href="sitemap.html">site map</a>
+            <a href="student-details.html">about us</a>
+		    <a href="gallery.html">Gallery</a>
+        </nav>
+    
+        <div class="icons">
+            
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="cart-items-container" id="cart-items-container">
+            <div class="items">
+
+            </div>      
+ 
+            <div class="total" id="total">
+
+            </div>
+            
+            <div id="input-form">
+
+            </div>
+
+            <div class="checkout" id="checkout">
+               <h1 style="margin: 300px 50px 75px 85px; color: rgb(255, 106, 0);"><i>No items in cart!</i></h1>
+            </div>
+        </div>
+    
+    </header>
+    
+    
+    <section class="products" id="products">
+        <h2 class="heading">Book <span> Store </span></h2>
+
+        <div class="box-container" id="box-container">
+
+            <!--Items Come to here-->
+
+        </div>
+
+       
+    </section>
+
+    <section class="footer">
+    
+        <div class="credit">
+            <h4 style="font-weight: 100;">
+                Developed by 
+                <span class="developer-info"> <a href="Page-Editors/page-editor-1.html">Banula Perera </a></span> | all rights reserved <br> <br>
+            </h4>
+        </div>
+    </section>
+
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

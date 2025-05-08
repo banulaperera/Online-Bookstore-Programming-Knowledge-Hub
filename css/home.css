@@ -1,0 +1,95 @@
+.home{
+	margin-top: 90px;
+	min-height: 80vh;
+	display: flex;
+	align-items: center;
+	background: url(../images/home.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.home .content{
+	max-width: 60rem;
+}
+.home .content h3{
+	font-size: 6rem;
+	text-transform: uppercase;
+	color: #fff;
+}
+.home .content p{
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: lighter;
+	line-height: 1.8;
+	padding: 1rem 0;
+}
+
+.blogs .box-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap:1.5rem;
+	margin: 20px;
+}
+
+.blogs .box-container .box{
+	border:var(--border);    
+}
+
+.blogs .box-container .box .image{
+	height: 25rem;
+	overflow:hidden;
+	width: 100%;
+}
+
+.blogs .box-container .box .image img{
+	height: 100%;
+	object-fit: cover;
+	width: 100%;
+}
+
+.blogs .box-container .box:hover .image img{
+	transform: scale(1.2);
+}
+
+
+
+.blogs .box-container .box .content{
+	padding: 2rem;
+}
+
+
+.blogs .box-container .box .content .title{
+	font-size: 2.5rem;
+	line-height: 1.5;
+	color: #fff;
+}
+.blogs .box-container .box .content .title:hover{
+	color: var(--main-color);
+}
+.blogs .box-container .box .content span{
+	color: var(--main-color);
+	display: block;
+	padding-top: 1rem;
+	font-size: 2rem;
+}
+.blogs .box-container .box .content p{
+	font-size: 1.6rem;
+	line-height: 1.8;
+	color: #ccc;
+	padding: 1rem 0;
+}
+
+.btn, .btn-checkout, .btn-addCart{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 5rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover, .btn-checkout:hover, .btn-addCart:hover{
+    letter-spacing: .2rem;
+}

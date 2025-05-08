@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0,0,0,0.9),transparent),url(../images/slide.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow:  hidden;
+}
+
+.logo{
+    width: 100px;
+    cursor:  pointer;
+    animation: slideUp 3s ease forwards;
+    animation-delay: 6.5s;
+}
+
+.navbar{
+    width: 85%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+small{
+    font-size: 32px;
+    font-weight: 700;
+    animation: slideDown 2s ease forwards;
+    animation-delay: 6.5s;
+}
+
+h1{
+    font-size: 80px;
+    margin: 10px 0px 5px;
+    line-height: 80px;
+    color: rgb(255, 106, 0);
+    font-weight: 700;
+    animation: slideLeft 2s ease forwards;
+    animation-delay: 6.5s;
+}
+
+h2{
+    color: #fff;
+    font-size: 80px;
+    margin: 10px 0px 15px;
+    animation: slideRight 2s ease forwards;
+    animation-delay: 6.5s;
+}
+
+h3{
+    animation: slideDown 3s ease forwards;
+    animation-delay: 6.5s;
+}
+
+span{
+    color: rgb(255, 106, 0);
+}
+
+.laguages img{
+    width: 50px;
+    animation: language 6s linear infinite ;
+}
+
+.laguages{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes language{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.laguages img:nth-child(1){
+    animation-delay: 2s;
+    width: 35px;
+}
+.laguages img:nth-child(2){
+    animation-delay: 3s;
+}
+.laguages img:nth-child(3){
+    animation-delay: 1s;
+    width: 30px;
+}
+.laguages img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.laguages img:nth-child(5){
+    animation-delay: 6s;
+}
+.laguages img:nth-child(6){
+    animation-delay: 5s;
+}
+.laguages img:nth-child(7){
+    animation-delay: 7s;
+    width: 25px;
+}
+
+@keyframes slideLeft{
+    0%{
+        transform: translateX(0);
+        opacity: 1 ;
+    }
+
+    100%{
+        transform: translateX(-100px);
+        opacity: 0 ;
+    }
+}
+
+@keyframes slideUp{
+    0%{
+        transform: translateY(0);
+        opacity: 1 ;
+    }
+
+    100%{
+        transform: translateY(-100px);
+        opacity: 0 ;
+        
+    }
+}
+
+@keyframes slideRight{
+    0%{
+        
+        transform: translateX(0);
+        opacity: 1 ;
+    }
+
+    100%{
+        transform: translateX(100px);
+        opacity: 0 ;
+    }
+}
+
+@keyframes slideDown{
+    0%{
+        transform: translateY(0);
+        opacity: 1 ;
+    }
+
+    100%{
+        
+        transform: translateY(100px);
+        opacity: 0 ;
+    }
+}

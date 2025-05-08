@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #0a0a0a;
+    text-align: center;
+    margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #1d1b1b;
+	color: #ffffff;
+	padding: 10px;
+}
+
+main {
+	margin: 20px;
+}
+
+section {
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px #aaaaaa;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.task-list{
+    font-weight: bold;
+}
+
+.task-list ul{
+    font-weight: normal;
+	margin: 40px;
+}
+
+li {
+	margin: 10px;
+}
+  
+a,
+.editor-link {
+	text-decoration: none;
+    color: #0000EE;
+}
+
+a:hover,
+.editor-link:hover {
+	text-decoration: underline;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}

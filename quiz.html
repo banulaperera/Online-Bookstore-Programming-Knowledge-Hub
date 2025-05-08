@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <link rel="icon" type="images/logo-icon" href="images/logo.png" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quizStyle.css">
+	<script src="js/activePage.js"></script>
+    
+</head>
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+    
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="buy-products.html">shop</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="quiz.html">quiz</a>
+            <a href="sitemap.html">site map</a>
+            <a href="student-details.html">about us</a>
+		    <a href="gallery.html">Gallery</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div> 
+    </header>
+
+    
+    <div class="quiz-container" id="quiz">
+      <div id="start-bar">
+        <h2 class="Quizheading">Welcome to the Quiz!</h2>
+        <br>
+        <div class="instructions">
+            <ol>
+                <li>You will have 10 questions.</li>
+                <li>You will have only 60 seconds for the quiz.</li>
+                <li>10 marks for each question.</li>
+                <li>No negative marks.</li>
+                <li>If time will up the quiz will automatically submit.</li>
+            </ol>
+        </div>
+        <button class="start-button" id="start">START</button>
+      </div>
+      <div class="quiz-header" id="header" style="display: none;">
+        <div class = "quiz-top">
+            <div id="time" class="timer">
+                <i class="fas fa-stopwatch"></i><span id="timer"> 60s </span>
+            </div>
+            <h3 id="quizNo">Quiz No</h3>   
+        </div>               
+        <h2 id="question">Question Text</h2><br>
+        <div class="option-list">
+            <div class="answer" id="a_text">Answer</div>
+            <div class="answer" id="b_text">Answer</div>
+            <div class="answer" id="c_text">Answer</div>
+            <div class="answer" id="d_text">Answer</div>          
+        </div>       
+        <button id="submit" class="button">Next Question</button>
+      </div>        
+    </div>
+
+    <section class="footer" style="width: 100%; margin-top: 850px; position: fixed;">   
+        <div class="credit">
+            Developed by 
+            <span class="developer-info"> <a href="Page-Editors/page-editor-3.html">Lahen Anjula </a></span> | all rights reserved <br> <br>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/quizScript.js"></script>
+</body>
+
+</html>

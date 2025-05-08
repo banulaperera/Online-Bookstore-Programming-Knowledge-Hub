@@ -1,0 +1,127 @@
+.feedback{
+	margin-top: 100px;
+}
+
+.feedback .row{
+	display: flex;
+	background:var(--black);
+	flex-wrap: wrap;
+	gap:1rem;
+}
+
+.feedback .row .map{
+	flex:1 1 45rem;
+	width: 100%;
+	object-fit: cover;
+}
+
+.feedback .row form{
+	flex:1 1 45rem;
+	padding:5rem 2rem;
+	text-align: center;
+}
+
+.feedback .row form h3{
+	text-transform: uppercase;
+	font-size: 3.5rem;
+	color:#fff;
+}
+
+.feedback .row form .label, .reaction{
+	align-items: left;
+	color: #ccc;
+	display: flex;
+	font-size: 2.2rem;
+}
+.feedback .row form .inputBox, .dropdown{
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	background:var(--bg);
+	border:var(--border);
+}
+
+.feedback .dropdown{
+	background-color: var(--bg);;
+}
+
+.feedback .row form .inputBox span{
+	color:#fff;
+	font-size: 2rem;
+	padding-left: 2rem;
+}
+
+.feedback .row form .inputBox input, .dropdown{
+	width: 100%;
+	padding:2rem;
+	font-size: 1.7rem;
+	color:#fff;
+	text-transform: none;
+	background:none;
+}
+
+
+.feedback .txtarea{
+	width: 100%;
+	font-size: 1.7rem;
+	color:#fff;
+	text-transform: none;
+	background:none;
+}
+
+.feedback .reaction{
+	display: flex;
+	position: relative;
+	gap: 30px;
+}
+.feedback .reaction-radio, .visit-radio{	
+	width: 20px;
+	height: 20px;
+
+}
+.feedback .reaction-radio{
+	margin-top: 15px;
+}
+
+.feedback .reaction-face{
+	width: 50px;
+	height: 50px;		
+}
+.feedback .radio-items{
+	display: flex;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	
+}
+
+option{
+	background-color: var(--black);
+}
+
+.error-massge-box{
+	font-size: 15px;
+	color: red;
+	text-align: left;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+#after-submit{
+	position: absolute;
+	top:35%;
+	left:15%;
+	width:70%;
+	color: #cccccc;
+	text-align: center;
+}
+#after-submit h2{
+	font-size: 55px;
+}
+#after-submit p{
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.btn{
+	width: 100%;
+}
